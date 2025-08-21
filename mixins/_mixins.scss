@@ -48,3 +48,35 @@
     line-height: 39.5px;
     letter-spacing: 0.2px;
 }
+
+@mixin font-h3() {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@mixin font-paragraph() {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+@mixin font-heading-h2() {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+@mixin font-lead( $font-weight: 400) {
+    font-weight: $font-weight;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+}

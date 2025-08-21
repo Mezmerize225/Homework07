@@ -55,6 +55,7 @@ body {
             padding: 10px 20px;
             gap: 10px;
             transition: box-shadow .3s ease;
+            font-family: inherit;
             
             &:hover {
                 @include mixins.btn-shadow();
@@ -113,6 +114,7 @@ body {
             @include mixins.mail-btn-font();
             right: 6px;
             top: 6px;
+            font-family: inherit;
             }
 
         }
@@ -126,7 +128,6 @@ body {
     height: 793px;
     position: relative;
     top: 120px;
-    background-color: brown;
 
     h2 {
         position: relative;
@@ -159,15 +160,174 @@ body {
         gap: 20px;
         padding-left: 143px;
         padding-right: 144px;
-        background-color: aquamarine;
         justify-content: space-between;
 
         .flex-item {
+            // display: flex;
             flex: 1 1 calc(33% - 10px);
-            background-color: blue;
-            // max-width: 316px;
+            max-width: 316px;
+            // @include mixins.center-row();
+            color: color.$color-black;
+
+            #center-icon {
+                display: flex;
+                position: relative;
+                // @include mixins.center-row();
+                justify-self: center;
+                width: 76px;
+                height: 76px;
+            }
             
+            .item-circle {
+                display: flex;
+                position: absolute;
+                justify-self: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                // left: 34px;
+                // bottom: 32px;
+            }
+
+            h3 {
+                @include mixins.font-h3();
+                margin-top: 10px;
+            }
+
+            p {
+                width: 298px;
+                height: 84px;
+                @include mixins.font-paragraph();
+            }
+
+// This changes the color and alignment of each item-circle
+
+            .item-circle-01 {
+                background-color: #FF5391;
+                left: 288px;
+                top: 1px;
+            }
+
+            .item-circle-02 {
+                background-color: #7553FF;
+                top: 7px;
+                left: 672px;
+            }
+
+            .item-circle-03 {
+                background-color: #53C1FF;
+                top: 7px;
+                right: 250px;
+            }
+
+            .item-circle-04 {
+                background-color: #53ACFF;
+                top: 5 px;
+                left: 253 px;
+            }
+
+            .item-circle-05 {
+                background-color: #FF5353;
+                // top: 218px; 
+                // left: 715px;
+            }
+
+            .item-circle-06 {
+                background-color: #FFBA53;
+                right: 272px;
+            }
+
         }
+
+        // :nth-child(1) {
+        //     :nth-child(1) {
+        //         left: 288px;
+        //         top: 1px;
+        //     }
+        // }
+
+        // :nth-child(2) {
+        //     :nth-child(1) {
+        //         left: 529px;
+        //         top: 7px;
+        //     }
+        // }
+
+    }
+
+}
+
+.third-section {
+    width: 100%;
+    height: 376px;
+    position: relative;
+    top: 140px;
+    background-color: color.$color-red;
+
+    .bg-image {
+        position: absolute;
+        width: 100%;
+        height: 376px;
+        background-image: url('./assets/image-1.svg'); opacity: 0.4;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .heading-h2 {
+        @include mixins.font-heading-h2();
+        color: color.$color-white;
+        top: 85px;
+        position: relative;
+    }
+
+    .lead {
+        @include mixins.font-lead();
+        color: color.$color-white;
+        top: 95px;
+        position: relative;
+    }
+
+
+    // .list2 {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     @include mixins.font-lead(700);
+    //     color: color.$color-white;
+    //     padding-left: 12.5%;
+    //     padding-right: 12.5%;
+    //     justify-content: space-between;
+    //     position: relative;
+    //     // padding-bottom: 85px;
+
+    //     // ?????????????????????????????????????
+    //     height: 280px;
+    //     align-items: end;
+    //     bottom: 60px;
+    // }
+
+    .bottom-text {
+        position: relative;
+        @include mixins.center-row();
+        width: 90%;
+        height: 53px;
+        top: 160px;
+
+        .list-items2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mixins.font-lead(700);
+            text-align: left;
+            color: color.$color-white;
+        }
+
+        // .icons {
+        //     display: flex;
+        //     position: absolute;
+        //     justify-content: space-around;
+        //     align-items: center;
+        // }
+
     }
 
 }
@@ -180,103 +340,3 @@ body {
 
 
 
-// body{
-//     // width: 100vw;
-//     // overflow: hidden;
-//     background-color: brown;
-//     display: flex;
-//     font-family: 'Manrope', 'Verdana';
-// }
-// .container{
-//     // display: flex;
-//     flex: 1 1 1440px;
-//     // max-width: 1440px;
-   
-// }
-// .header1{
-//     background-image: url('./assets/Rectangle-1.svg');
-//     background-repeat: no-repeat;
-//     width: 100%;
-//     height: 754px;
-// }
-// .header1 h3 ul{
-//     display: flex;
-//     position: relative;
-//     width: 603px;
-//     height: 20px;
-//     top: 45px;
-//     left: 584px;
-//     gap: 40px;
-// }
-// .item{
-//     display: inline-block;
-//     @include mixins.font-header();
-//     color: color.$color-black;
-// }
-// .red-btn{
-//     display: flex;
-//     position: relative;
-//     @include mixins.font-header();
-//     width: 91px;
-//     height: 40px;
-//     top: 35px;
-//     left: 1227px;
-//     border-radius: 5px;
-//     border-style: none;
-//     background-color: color.$color-red;
-//     color: color.$color-white;
-//     padding: 10px 20px;
-//     gap: 10px;
-//     transition: box-shadow .3 ease;
-
-//     &:hover {
-//         @include mixins.btn-shadow();
-//     }
-// }
-// .header1 div{
-//     display: flex;
-//     position: relative;
-//     flex-direction: column;
-//     width: 665px;
-//     height: 406px;
-//     top: 200px;
-//     left: 122px;
-//     border-radius: 8px;
-//     background-color: aquamarine;
-
-    
-// }
-
-// .header1 div h1{
-//     @include mixins.font-h1();
-//     color: color.$color-black;
-// }
-
-// .header1 div h4{
-//     font-weight: 400;
-//     font-size: 20px;
-//     line-height: 36px;
-//     letter-spacing: 0.2px;
-//     color: color.$color-black;
-// }
-
-// .header1 div input{
-    // position: relative;
-    // width: 502px;
-    // height: 73px;
-    // top: 50px;
-
-    // // This left aligns left from the parent container /////////////////
-    // // left: 122px;
-    // border-radius: 8px;
-    // @include mixins.input-font();
-// }
-
-
-// .btn2{
-//     position: absolute;
-//     width: 136px;
-//     height: 61px;
-//     justify-content: flex-end;
-//     align-items: center;
-// }

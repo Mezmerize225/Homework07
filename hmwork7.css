@@ -56,6 +56,7 @@ body {
   padding: 10px 20px;
   gap: 10px;
   transition: box-shadow 0.3s ease;
+  font-family: inherit;
 }
 .landing-section header .contact-btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -115,6 +116,7 @@ body {
   letter-spacing: 0.2px;
   right: 6px;
   top: 6px;
+  font-family: inherit;
 }
 
 .main-section {
@@ -122,7 +124,6 @@ body {
   height: 793px;
   position: relative;
   top: 120px;
-  background-color: brown;
 }
 .main-section h2 {
   position: relative;
@@ -157,12 +158,128 @@ body {
   gap: 20px;
   padding-left: 143px;
   padding-right: 144px;
-  background-color: aquamarine;
   justify-content: space-between;
 }
 .main-section .flex-container .flex-item {
   flex: 1 1 calc(33% - 10px);
-  background-color: blue;
+  max-width: 316px;
+  color: black;
+}
+.main-section .flex-container .flex-item #center-icon {
+  display: flex;
+  position: relative;
+  justify-self: center;
+  width: 76px;
+  height: 76px;
+}
+.main-section .flex-container .flex-item .item-circle {
+  display: flex;
+  position: absolute;
+  justify-self: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.main-section .flex-container .flex-item h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+.main-section .flex-container .flex-item p {
+  width: 298px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.main-section .flex-container .flex-item .item-circle-01 {
+  background-color: #FF5391;
+  left: 288px;
+  top: 1px;
+}
+.main-section .flex-container .flex-item .item-circle-02 {
+  background-color: #7553FF;
+  top: 7px;
+  left: 672px;
+}
+.main-section .flex-container .flex-item .item-circle-03 {
+  background-color: #53C1FF;
+  top: 7px;
+  right: 250px;
+}
+.main-section .flex-container .flex-item .item-circle-04 {
+  background-color: #53ACFF;
+  top: 5 px;
+  left: 253 px;
+}
+.main-section .flex-container .flex-item .item-circle-05 {
+  background-color: #FF5353;
+}
+.main-section .flex-container .flex-item .item-circle-06 {
+  background-color: #FFBA53;
+  right: 272px;
+}
+
+.third-section {
+  width: 100%;
+  height: 376px;
+  position: relative;
+  top: 140px;
+  background-color: #f84646;
+}
+.third-section .bg-image {
+  position: absolute;
+  width: 100%;
+  height: 376px;
+  background-image: url("./assets/image-1.svg");
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third-section .heading-h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0;
+  text-align: center;
+  color: white;
+  top: 85px;
+  position: relative;
+}
+.third-section .lead {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  color: white;
+  top: 95px;
+  position: relative;
+}
+.third-section .bottom-text {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 53px;
+  top: 160px;
+}
+.third-section .bottom-text .list-items2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  text-align: left;
+  color: white;
 }
 
 /*# sourceMappingURL=hmwork7.css.map */
